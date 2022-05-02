@@ -1,0 +1,148 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.6;
+  font-kerning: normal;
+  color: #fff;
+  background-color: #333;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+  "Helvetica Neue", "Hiragino Kaku Gothic ProN", "Hiragino Sans", Arial,
+  "Noto Sans", sans-serif;
+  -moz-osx-font-smoothing: auto;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
+p {
+  margin-top: 0;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+#app .canvasContainer {
+  width: 100%;
+  height: calc(100% - 102px);
+}
+
+.timeline {
+  width: 100%;
+  height: 102px;
+  padding: 1rem 3rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.timeline > div {
+  position: relative;
+}
+
+.currentTime {
+  position: absolute;
+  bottom: -0.5rem;
+  width: 40px;
+  border: none;
+}
+
+.timeline > div.bottom {
+  padding-top: 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  width: 100%;
+  border-radius: 10px;
+  margin: auto;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  background-color: transparent;
+  position: relative;
+}
+
+input[type="range"]:focus {
+  outline: none;
+}
+
+input[type="range"]::before {
+  content: "";
+  width: 100%;
+  height: 3px;
+  background-color: #ddd;
+  position: absolute;
+  top: calc((100% - 3px) / 2);
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  border-radius: 50%;
+  cursor: pointer;
+  width: 25px;
+  height: 25px;
+  background: #F3F3F3;
+  position: relative;
+}
+
+.modal__overlay {
+  width: 100%;
+  height: 100%;
+  inset: 0;
+  position: fixed;
+  background-color: rgba(0,0,0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal__container {
+  width: 100%;
+  max-width: 500px;
+  height: 100%;
+  max-height: 450px;
+  background-color: #28292e;
+  padding: 1rem;
+}
+
+.icon_container {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.circle_icon {
+  all: unset;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border: 1px solid #28292e;
+  border-radius: 50%;
+  background-color: hsl(230, 7%, 17%);
+  transition: background-color 350ms cubic-bezier(0.610, 0.040, 0.225, 0.830);
+  cursor: pointer;
+}
+
+.circle_icon:hover {
+  background-color: hsl(230, 7%, 35%);
+}
