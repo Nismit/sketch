@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@tabler/icons": "1.68.0",
-    "preact": "10.7.2",
+    "preact": "10.7.3",
     "three": "0.141.0",
     "tweakpane": "3.0.8"
   },
