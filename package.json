@@ -12,7 +12,7 @@
     "@tabler/icons": "1.68.0",
     "preact": "10.7.3",
     "three": "0.141.0",
-    "tweakpane": "3.0.8"
+    "tweakpane": "3.1.0"
   },
   "devDependencies": {
     "@preact/preset-vite": "2.2.0",
