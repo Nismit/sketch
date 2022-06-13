@@ -16,7 +16,7 @@
   },
   "devDependencies": {
     "@preact/preset-vite": "2.2.0",
-    "@tweakpane/core": "1.0.9",
+    "@tweakpane/core": "1.1.0",
     "@types/three": "0.141.0",
     "ts-node": "10.8.1",
     "typescript": "4.7.3",
