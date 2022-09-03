@@ -9,7 +9,7 @@
     "save-png": "ts-node src/local.ts"
   },
   "dependencies": {
-    "@tabler/icons": "1.83.1",
+    "@tabler/icons": "1.92.0",
     "preact": "10.10.6",
     "three": "0.143.0",
     "tweakpane": "3.1.0"
