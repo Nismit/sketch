@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "@tabler/icons": "1.113.0",
-    "preact": "10.11.2",
+    "preact": "10.11.3",
     "three": "0.145.0",
     "tweakpane": "3.1.0"
   },
