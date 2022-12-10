@@ -10,7 +10,7 @@
     "save-png": "ts-node src/local.ts"
   },
   "dependencies": {
-    "@tabler/icons": "1.113.0",
+    "@tabler/icons": "1.116.1",
     "preact": "10.11.3",
     "three": "0.145.0",
     "tweakpane": "3.1.0"
