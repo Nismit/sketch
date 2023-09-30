@@ -12,7 +12,7 @@
   "dependencies": {
     "@tabler/icons-preact": "^2.11.0",
     "preact": "10.16.0",
-    "three": "0.154.0",
+    "three": "0.157.0",
     "tweakpane": "4.0.0"
   },
   "devDependencies": {
